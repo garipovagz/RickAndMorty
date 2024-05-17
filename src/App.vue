@@ -13,7 +13,6 @@ const filters = reactive({
   species: '',
 })
 
-// const baseURL = 'https://rickandmortyapi.com/api/character'
 const fetchData = async (url) => {
   try {
     const { data } = await axios.get(url)
