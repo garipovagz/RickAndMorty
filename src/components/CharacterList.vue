@@ -24,8 +24,5 @@ defineProps({
 
 <style scoped>
 .list-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
 }
 </style>

@@ -66,6 +66,7 @@ const goToPage = (currentPage) => {
 
 <style>
 .pagination-container {
+  margin: 20px 10px 10px;
   column-gap: 10px;
   align-items: center;
 }
