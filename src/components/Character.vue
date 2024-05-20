@@ -32,7 +32,7 @@ fetchData()
         <h2>{{ name }}</h2>
         <div class="status">
           <svg v-show="status === 'Alive'">
-            <circle cx="5" cy="5" r="5" fill="#008000" />
+            <circle cx="5" cy="5" r="5" fill="#32CD32" />
           </svg>
           <svg v-show="status === 'Dead'">
             <circle cx="5" cy="5" r="5" fill="#EF0A0A" />
@@ -66,7 +66,7 @@ fetchData()
 @media (min-width: 650px) {
   .container {
     display: flex;
-    width: 750px;
+    width: 600px;
   }
 }
 img {
