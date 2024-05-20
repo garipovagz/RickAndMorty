@@ -25,10 +25,10 @@ defineProps({
 .list-wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 200px;
+  padding: 0 100px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .list-wrapper {
     grid-template-columns: 1fr 1fr;
     padding: 0 80px;

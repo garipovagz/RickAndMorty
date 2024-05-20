@@ -63,10 +63,9 @@ fetchData()
   color: white;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 870px) {
   .container {
     display: flex;
-    width: 600px;
   }
 }
 img {
@@ -90,11 +89,11 @@ svg {
 }
 
 h2 {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .section {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 
 .text-grey {
