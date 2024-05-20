@@ -1,5 +1,4 @@
 <script setup>
-import axios from 'axios'
 import Character from './Character.vue'
 
 defineProps({
@@ -24,5 +23,22 @@ defineProps({
 
 <style scoped>
 .list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 200px;
+}
+
+@media (min-width: 1200px) {
+  .list-wrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 80px;
+  }
+}
+
+@media (min-width: 1880px) {
+  .list-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 30px;
+  }
 }
 </style>

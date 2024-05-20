@@ -56,21 +56,27 @@ fetchData()
 </template>
 
 <style scoped>
-img {
-  box-sizing: content-box;
-
-  border-radius: 0.5rem;
-}
 .container {
-  display: flex;
   margin: 20px;
   border-radius: 0.5rem;
   background-color: rgb(60, 62, 68);
   color: white;
 }
 
+@media (min-width: 650px) {
+  .container {
+    display: flex;
+    width: 750px;
+  }
+}
+img {
+  border-radius: 0.5rem;
+  width: 300px;
+  height: 300px;
+}
+
 .info {
-  padding: 10px;
+  padding: 20px;
 }
 
 svg {
@@ -93,7 +99,7 @@ h2 {
 
 .text-grey {
   color: rgb(158, 158, 158);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 </style>

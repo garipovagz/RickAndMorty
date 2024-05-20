@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import { BASE_URL } from '@/constant'
 
 const currentPage = ref(1)
 
@@ -13,7 +14,7 @@ const { fetchData, filters } = inject('fetching')
 
 const goToPage = (currentPage) => {
   fetchData(
-    `https://rickandmortyapi.com/api/character/?status=${filters.status}&species=${filters.species}&page=${currentPage}`
+    `${BASE_URL}?status=${filters.status}&species=${filters.species}&page=${currentPage}`
   )
 }
 </script>

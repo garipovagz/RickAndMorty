@@ -1,12 +1,11 @@
 <script setup>
 import { inject } from 'vue'
+import { BASE_URL } from '@/constant'
 
 const { fetchData, filters } = inject('fetching')
 
 const filter = () => {
-  fetchData(
-    `https://rickandmortyapi.com/api/character/?status=${filters.status}&species=${filters.species}`
-  )
+  fetchData(`${BASE_URL}?status=${filters.status}&species=${filters.species}`)
 }
 </script>
 <template>
@@ -30,9 +29,7 @@ const filter = () => {
 .search {
   display: flex;
   column-gap: 20px;
-
   border-radius: 4px;
-  cursor: pointer;
 }
 
 input,
@@ -43,10 +40,6 @@ select {
   height: 35px;
   font-size: 15px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-option {
-  background-color: rgb(0, 128, 128);
 }
 
 button:hover {

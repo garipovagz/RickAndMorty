@@ -35,8 +35,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="header"><Pagination :info="info" /> <Filter /></div>
-  <CharacterList class="list" :items="items" />
+  <div class="header">
+    <Pagination :info="info" />
+    <Filter />
+  </div>
+  <CharacterList :items="items" />
 </template>
 
 <style scoped>
@@ -47,21 +50,5 @@ onMounted(async () => {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-}
-
-.list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    '. . .'
-    '. . .'
-    '. . .'
-    '. . .'
-    '. . .'
-    '. . .'
-    '. . .';
-  padding: 0 81px;
 }
 </style>
